@@ -79,3 +79,52 @@ header p{
     font-weight: 300;
 }
 /* hero section end */
+
+/* main section start*/
+
+/* intro section start */
+section{
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+}
+section h1{
+    text-align: center;
+    font-size: 40px;
+     font-family: 'Inter';
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+}
+.container-colour-header{
+    color: #2563EB;
+    font-weight: 300;
+    font-size: 12px ;
+}
+.intro-box{
+    border: .5px solid rgb(234, 233, 233);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.intro-info{
+    display: grid;
+    gap: 10px;
+    padding: 20px 0px 30px 20px;
+    font-family: 'Inter';
+}
+.intro-info h5{
+    color: #575757;
+    font-size: 14px;
+    font-weight: 300;
+}
+.intro-info h6{
+    font-weight: 500;
+}
+.intro-info h3{
+    font-weight: 400;
+}
+/* intro section end */
+/* main section end*/
