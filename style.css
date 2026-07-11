@@ -36,3 +36,46 @@ a{
     font-family: 'Inter';
 }
 /* nav end */
+
+/* hero section start */
+header{
+    background-image:
+    linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)),
+    linear-gradient(to top right, rgba(0,0,0,0.6), rgba(0,0,0,0)), 
+    url('./assets/banner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content{
+   text-align: center;
+   display: grid;
+   gap: 400px;
+    font-family: 'Inter';
+    padding-top: 50px;
+}
+.header-content div{
+    display: grid;
+    gap: 16px;
+}
+.header-content button{
+    width: 30%;
+    height: 80px;
+   margin-left: 35%;
+   padding: 10px;
+   font-size: x-large;
+}
+header h1{
+    color: white;
+    font-size: 100px;
+    
+}
+header p{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+/* hero section end */
