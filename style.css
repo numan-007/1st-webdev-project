@@ -226,4 +226,143 @@ section h1{
 }
 /* price section end */
 
+
+/* AI section start */
+#AI{
+    margin: 0px;
+    padding: 0px;
+    background:#0c1328;
+    color:#fff;  
+}
+.journey{
+    margin-bottom: 0px;
+}
+.section-title{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 80px;
+}
+.section-title span{
+
+    color:#00d4ff;
+    letter-spacing:2px;
+    font-weight:600;
+}
+.section-title h2{
+
+    font-size:48px;
+    margin:15px 0;
+}
+.section-title p{
+
+    color:#b9c2d4;
+    line-height:1.8;
+}
+/* ========================= */
+.timeline{
+    position:relative;
+    max-width:1200px;
+    margin:auto;
+}
+/* Center Line */
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+    width:4px;
+    height:100%;
+    background:linear-gradient(#00d4ff,#7c3aed);
+}
+/* ========================= */
+.timeline-row{
+    display:grid;
+    grid-template-columns:1fr 80px 1fr;
+    align-items:center;
+    margin-bottom:70px;
+}
+/* ========================= */
+.middle{
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+.dot{
+    width:22px;
+    height:22px;
+    background:#00d4ff;
+    border-radius:50%;
+    border:5px solid #070b17;
+    box-shadow:0 0 20px #00d4ff;
+    z-index:2;
+}
+/* ========================= */
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:18px;
+    padding:30px;
+    transition:.35s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#00d4ff;
+    box-shadow:0 15px 40px rgba(0,212,255,.2);
+}
+.left{
+    margin-right:30px;
+}
+.right{
+    margin-left:30px;
+}
+/* ========================= */
+.number{
+    width:48px;
+    height:48px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:linear-gradient(135deg,#00d4ff,#7c3aed);
+    font-weight:bold;
+    margin-bottom:18px;
+}
+.card h3{
+    margin-bottom:12px;
+    font-size:24px;
+}
+.card p{
+    color:#c1c8d8;
+    line-height:1.7;
+}
+/* ========================= */
+/* Mobile */
+/* ========================= */
+@media(max-width:900px){
+.timeline::before{
+left:22px;
+transform:none;
+}
+.timeline-row{
+grid-template-columns:45px 1fr;
+gap:25px;
+}
+.middle{
+grid-column:1;
+}
+.card{
+grid-column:2;
+margin:0;
+}
+.timeline-row > div:first-child:empty{
+display:none;
+}
+.timeline-row{
+margin-bottom:50px;
+}
+}
+/* AI section end */
+
 /* main section end*/
